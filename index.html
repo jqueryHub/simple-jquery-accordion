@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/simple-jquery-accordion.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <title>Simple Jquery Accordion</title>
+  </head>
+  <body>
+
+  <div class="container">
+    <h1>Simple Accordion</h1>
+    <div class="sm-accordion">
+      <div class="sm-accordion-group">
+        <div class="sm-accordion-heading">Accordion Heading - 1</div>
+        <div class="sm-accordion-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="sm-accordion-group">
+        <div class="sm-accordion-heading">Accordion Heading - 2</div>
+        <div class="sm-accordion-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="sm-accordion-group">
+        <div class="sm-accordion-heading">Accordion Heading - 3</div>
+        <div class="sm-accordion-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+    </div>
+
+    <h1>Open first panel by default</h1>
+    <div class="sm-accordion">
+      <div class="sm-accordion-group">
+        <div class="sm-accordion-heading active">Accordion Heading - 1</div>
+        <div class="sm-accordion-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="sm-accordion-group">
+        <div class="sm-accordion-heading">Accordion Heading - 2</div>
+        <div class="sm-accordion-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="sm-accordion-group">
+        <div class="sm-accordion-heading">Accordion Heading - 3</div>
+        <div class="sm-accordion-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+  (function($) {
+    $('.sm-accordion-heading.active + .sm-accordion-content').slideDown();
+    $('.sm-accordion-heading').click(function(){
+      var nextall = $(this).parent().closest('.sm-accordion-group').nextAll().find('.sm-accordion-heading');
+      var prevall = $(this).parent().closest('.sm-accordion-group').prevAll().find('.sm-accordion-heading');
+
+      $(this).parent().find('.sm-accordion-heading').next().slideToggle();
+      $(nextall).next().slideUp();
+      $(prevall).next().slideUp();
+
+      $(this).parent().find('.sm-accordion-heading').toggleClass('active');
+      $(nextall).removeClass('active');
+      $(prevall).removeClass('active');
+    });
+  }( jQuery ));
+  </script>
+  </body>
+</html>

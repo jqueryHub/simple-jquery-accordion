@@ -1,0 +1,22 @@
+/* Reset css --- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+* {padding:0px; margin:0px; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;}
+*, *::before, *::after { box-sizing: border-box;}
+*:focus {outline: 0;}
+html,body{ overflow-x:hidden;}
+body{margin:0; padding:0; font-size:14px; font-family: 'Montserrat', sans-serif; color:#2b2b2b; font-weight: 400;}
+ol, ul {list-style: none; margin:0; padding:0;}
+:focus {outline: 0;}
+a, a:link {text-decoration: none; outline:none;}
+p { padding:2px 0; margin:0; line-height: 26px;}
+.clear {clear:both;}
+a {color:#337ab8; text-decoration:none;}
+a:hover {text-decoration:none; color:#0c528f;}
+a:focus{outline:none !important;}
+h1, h1 a, h2, h2 a, h3, h4, h5, h6 { margin:0; padding:0; font-weight:600;}
+img {border:0; max-width:100%; height:auto;}
+.clearfix::after { display: block; clear: both; content: "";}
+/* --- Reset css */
+
+h1{ padding: 35px 0 0 0;}
+.container { max-width: 1140px; margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px;}

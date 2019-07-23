@@ -1,0 +1,7 @@
+.sm-accordion{ margin: 25px 0;}
+.sm-accordion-group{ margin-bottom: 15px;}
+
+.sm-accordion-heading{ padding: 15px; cursor: pointer; border: 1px solid #dadada; font-weight: 600;}
+.sm-accordion-heading.active{ color: red;}
+
+.sm-accordion-content{ display: none; padding: 15px; border: 1px solid #dadada; border-top: 0;}
