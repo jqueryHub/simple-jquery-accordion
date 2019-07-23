@@ -11,6 +11,8 @@ Simple Jquery Accordion is very simple
 How to use
 ==========
 
+<pre>
+<code>
 <div id="demoTab">          
     <ul class="resp-tabs-list">
         <li> .... </li>
@@ -23,8 +25,13 @@ How to use
         <div> ....... </div>
         <div> ....... </div>
     </div>
-</div>    
+</div>
+</code>
+</pre>    
 
+
+<pre>
+<code>
 <div class="sm-accordion">
   <div class="sm-accordion-group">
     <div class="sm-accordion-heading">Heading - 1</div>
@@ -39,8 +46,12 @@ How to use
     <div class="sm-accordion-content"> ... </div>
   </div>
 </div>
+</code>
+</pre>    
 
 
+<pre>
+<code>
 (function($) {
   $('.sm-accordion-heading.active + .sm-accordion-content').slideDown();
   $('.sm-accordion-heading').click(function(){
@@ -56,3 +67,5 @@ How to use
     $(prevall).removeClass('active');
   });
 }( jQuery ));
+</code>
+</pre>    
