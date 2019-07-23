@@ -11,6 +11,20 @@ Simple Jquery Accordion is very simple
 How to use
 ==========
 
+<div id="demoTab">          
+    <ul class="resp-tabs-list">
+        <li> .... </li>
+        <li> .... </li>
+        <li> .... </li>
+    </ul>
+
+    <div class="resp-tabs-container">                                                        
+        <div> ....... </div>
+        <div> ....... </div>
+        <div> ....... </div>
+    </div>
+</div>    
+
 <div class="sm-accordion">
   <div class="sm-accordion-group">
     <div class="sm-accordion-heading">Heading - 1</div>
