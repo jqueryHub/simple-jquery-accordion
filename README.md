@@ -1,11 +1,9 @@
 Simple Jquery Accordion
 =================================
 
-Simple Jquery Accordion is very simple
+CSS driven simple jquery accordion.
 
-[Article on jqueryHub](#)
-
-[Demo](#)
+=> [Demo](https://jqueryhub.github.io/simple-jquery-accordion/)
 
 
 How to use
@@ -15,15 +13,15 @@ How to use
 
         <div class="sm-accordion">
           <div class="sm-accordion-group">
-            <div class="sm-accordion-heading">Accordion Heading - 1</div>
+            <div class="sm-accordion-heading">Heading - 1</div>
             <div class="sm-accordion-content"> ..... </div>
           </div>
           <div class="sm-accordion-group">
-            <div class="sm-accordion-heading">Accordion Heading - 2</div>
+            <div class="sm-accordion-heading">Heading - 2</div>
             <div class="sm-accordion-content"> ..... </div>
           </div>
           <div class="sm-accordion-group">
-            <div class="sm-accordion-heading">Accordion Heading - 3</div>
+            <div class="sm-accordion-heading">Heading - 3</div>
             <div class="sm-accordion-content"> ..... </div>
           </div>
         </div>
